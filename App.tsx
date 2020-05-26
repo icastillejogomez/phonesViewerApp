@@ -20,7 +20,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 // Import app views
-import { Home } from './src/views'
+import { Home, Details } from './src/views'
 
 /**
  * Root App with React Navigation and Redux Wrappers
@@ -36,6 +36,13 @@ const RootApp = () => {
           component={Home}
           options={{ 
             headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Details"
+          component={Details}
+          options={{ 
+
           }}
         />
       </Stack.Navigator>
