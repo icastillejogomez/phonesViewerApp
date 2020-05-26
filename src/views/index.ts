@@ -1,7 +1,7 @@
-import Home from './Home'
-import Details from './Details'
+import PhoneListContainer from './PhoneListContainer'
+import PhoneDetailComponent from './PhoneDetailComponent'
 
 export {
-  Home,
-  Details,
+  PhoneListContainer,
+  PhoneDetailComponent,
 }

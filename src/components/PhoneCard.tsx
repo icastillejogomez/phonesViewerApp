@@ -5,16 +5,20 @@ import {
   View,
   Text,
   TouchableOpacity,
+  ImageBackground,
 } from 'react-native';
 
-export default (props) => {
+import { PhoneCardType } from 'src/types';
+
+const PhoneCard: React.FC<PhoneCardType> = ({ navigation, data }) => {
   return (
     <TouchableOpacity
       activeOpacity={0.42}
-      onPress={() => props.navigation.navigate('Details')}
+      onPress={() => navigation.navigate('Details', data)}
     >
       <View style={styles.root} >
-        <Text style={styles.phoneTitle} >{props.title}</Text>
+        <ImageBackground source={{ uri: data.picture }} style={styles.bgImage} />
+        <Text style={styles.phoneTitle} >{data.title}</Text>
       </View>
     </TouchableOpacity>
   )
@@ -22,7 +26,7 @@ export default (props) => {
 
 const styles = StyleSheet.create({
   root: {
-    backgroundColor: 'white',
+    backgroundColor: '#FFF',
     marginHorizontal: 24,
     marginVertical: 18,
     paddingVertical: 8,
@@ -39,11 +43,20 @@ const styles = StyleSheet.create({
 
     elevation: 14,
   },
+  bgImage: {
+    width: '100%',
+    height: '100%',
+    opacity: 0.5,
+  },
   phoneTitle: {
     fontSize: 30,
     fontWeight: '800',
     position: 'absolute',
     bottom: 20,
     right: 20,
+    elevation: 20,
+    color: '#000',
   }
 });
+
+export default PhoneCard;

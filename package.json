@@ -18,7 +18,10 @@
     "react-native-gesture-handler": "^1.6.1",
     "react-native-reanimated": "^1.9.0",
     "react-native-safe-area-context": "^2.0.1",
-    "react-native-screens": "^2.8.0"
+    "react-native-screens": "^2.8.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "rn-placeholder": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -26,15 +29,14 @@
     "@react-native-community/eslint-config": "^1.0.0",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.62.0",
+    "@types/react-redux": "^7.1.9",
     "@types/react-test-renderer": "16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.58.0",
-    "prettier": "^2.0.4",
     "react-test-renderer": "16.11.0",
+    "redux-tools": "^3.2.0",
     "typescript": "^3.8.3"
   },
   "jest": {
