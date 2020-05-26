@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     elevation: 14,
   },
   phoneTitle: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: '800',
     position: 'absolute',
     bottom: 20,
