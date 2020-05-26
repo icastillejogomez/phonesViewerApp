@@ -21,3 +21,10 @@ And then start the app:
 ```sh
 $ npx react-native run-ios
 ```
+
+### App screenshots
+
+![loading](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/loading.png)
+![home](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/home.png)
+![details](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/details.png)
+![spinner](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/spinner.png)
