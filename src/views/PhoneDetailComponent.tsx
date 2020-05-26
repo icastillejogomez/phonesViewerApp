@@ -16,7 +16,6 @@ import { RouteProp } from '@react-navigation/native';
 type DetailsScreenNavigationProp = StackNavigationProp<RootStackParamList,'Details'>;
 type DetailsScreenRouteProp = RouteProp<RootStackParamList, 'Details'>;
 
-
 interface Props {
   navigation: DetailsScreenNavigationProp;
   route: DetailsScreenRouteProp;
@@ -41,6 +40,7 @@ const Details: React.FC<Props> = ({ route, navigation }: Props) => {
         </View>
         <Text style={styles.title} >{title}</Text>
         <Text style={styles.description} >{description}</Text>
+        <Text style={styles.color} >{`Colors: ${color.join(', ')}`}</Text>
         <Text style={styles.price} >{`${price} €`}</Text>
       </SafeAreaView>
     </>
@@ -77,6 +77,13 @@ const styles = StyleSheet.create({
     fontWeight: '200',
     letterSpacing: 0.75,
     textAlign: 'justify',
+  },
+  color: {
+    color: 'grey',
+    fontSize: 12,
+    fontWeight: '200',
+    marginHorizontal: 20,
+    marginVertical: 8,
   },
   price: {
     textAlign: 'right',
