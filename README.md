@@ -24,7 +24,4 @@ $ npx react-native run-ios
 
 ### App screenshots
 
-![loading](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/loading.png)
-![home](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/home.png)
-![details](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/details.png)
-![spinner](https://github.com/icastillejogomez/phonesViewerApp/blob/master/.imgs/spinner.png)
+<img src="https://github.com/icastillejogomez/phonesViewerApp/raw/master/.imgs/loading.png" width="45%"></img> <img src="https://github.com/icastillejogomez/phonesViewerApp/raw/master/.imgs/home.png" width="45%"></img> <img src="https://github.com/icastillejogomez/phonesViewerApp/raw/master/.imgs/details.png" width="45%"></img> <img src="https://github.com/icastillejogomez/phonesViewerApp/raw/master/.imgs/spinner.png" width="45%"></img> 
