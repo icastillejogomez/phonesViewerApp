@@ -4,5 +4,7 @@ export type RootStackParamList = {
   Home: {
     
   },
-  Details: Phone,
+  Details: {
+    data: Phone,
+  },
 }

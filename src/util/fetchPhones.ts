@@ -2,7 +2,7 @@ import { Phone } from "src/types"
 
 export const fetchPhones = (offset: number): Promise<Phone[]> => {
   return new Promise((resolve, reject) => {
-    const uri = `http://localhost:8080/api/phones?offset=${offset}`
+    const uri = `http://192.168.1.52:8080/api/phones?offset=${offset}`
     console.log(uri)
     fetch(uri)
       .then(res => {

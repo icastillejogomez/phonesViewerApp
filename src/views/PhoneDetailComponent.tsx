@@ -22,9 +22,9 @@ interface Props {
 }
 
 const Details: React.FC<Props> = ({ route, navigation }: Props) => {
-  const { title, picture, description, price, color } = route.params
+  const { title, picture, description, price, color } = route.params.data
   useEffect(() => {
-    navigation.setOptions({ title: route.params.title })
+    navigation.setOptions({ title })
   })
   return (
     <>

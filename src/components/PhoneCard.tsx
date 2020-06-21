@@ -14,7 +14,7 @@ const PhoneCard: React.FC<PhoneCardType> = ({ navigation, data }) => {
   return (
     <TouchableOpacity
       activeOpacity={0.42}
-      onPress={() => navigation.navigate('Details', data)}
+      onPress={() => navigation.navigate('Details', { data: data })}
     >
       <View style={styles.root} >
         <ImageBackground source={{ uri: data.picture }} style={styles.bgImage} />
